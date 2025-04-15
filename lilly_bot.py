@@ -5,7 +5,8 @@ import discord
 import asyncio
 
 # 디스코드 봇 정보 입력하기
-DISCORD_TOKEN = ''
+import os  # ← 이거 꼭 있어야 함!
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 CHANNEL_ID = 1361583939663302717  # 디스코드 채널 ID 숫자로 바꾸기
 
 # 최근 글 링크 저장용
